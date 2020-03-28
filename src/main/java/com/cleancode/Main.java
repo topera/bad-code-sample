@@ -1,12 +1,12 @@
-package com.topera;
+package com.cleancode;
 
 import java.util.ArrayList;
 
 /**
- * This is a program that put some risk points to the users, considering the invented virus risk:
+ * This is a program that put some risk points to the users, considering a new virus:
  * If is man: +1
  * If is old: +1
- * (ele fala a chance de um usuário de coronavirus)
+ * (ele fala a chance de um usuário com um novo virus)
  * @autor Rafael Topera
  */
 public class Main {
@@ -21,9 +21,6 @@ public class Main {
      */
     public static void main(String[] args) {
 
-        /**
-         * CREATE USER LIST
-         */
         // TODO
         User j = new User();
         j.name = "John";
@@ -105,7 +102,7 @@ class User {
     int risk;
 
     boolean isThisUserInTheVirusRiskGroupBecauseIfGreatherThan50(){
-        // if the age is great than 60 then the user in the coronavirus risk group
+        // if the age is great than 60 then the user in the virus risk group
         if (age >= 60){
             return true;
         } else
